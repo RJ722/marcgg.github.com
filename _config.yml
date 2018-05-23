@@ -4,17 +4,15 @@ exclude: [".rvmrc", "README.md", "Rakefile"]
 
 markdown: kramdown
 kramdown:
+  input: GFM
   syntax_highlighter: rouge
 
 title : marcgg#blog
 author :
-  name : Marc G Gauthier
-  email : marcg.gauthier@gmail.com
+  name : Rahul Jha
+  email : rahul722j@gmail.com
 
-production_url : https://marcgg.com
-
-collections:
-  - books
+production_url : https://rj722.github.io/
 
 gems:
   - jekyll-redirect-from
