@@ -64,7 +64,7 @@ program.py:4: unused function 'false_positive_function' (60% confidence)
 program.py:12: unused variable 'message' (60% confidence)
 ```
 
-As you can see, vulture also reports a confidence value which is a measure of how sure vulture is about that part of code being unused. This output can be made even more meaningful with the help of flags like `--min-confidence` and `--sort-by-size` which are self explanatory.
+As you can see, along with every result, vulture also reports a confidence value - which is a measure of how sure vulture is about that part of code being unused. This output can be made even more meaningful with the help of flags like `--min-confidence` and `--sort-by-size`. Read more about them [here](https://github.com/jendrikseipp/vulture/tree/master/README.rst)
 
 Owing to Python's dynamic nature, Vulture is likely to miss some dead code. Also, code which is only implicitly used is reported unused, such as overloading a parent class method, overriding methods of C/C++ extensions, etc.
 
@@ -121,7 +121,7 @@ class Whitelist:
 
 Now, since whitelists are so extensively used, Vulture already comes [loaded for some popular libraries like `sys`, `collections`, `unittest`, etc.](https://github.com/jendrikseipp/vulture/tree/master/vulture/whitelists/) - These whitelists are automatically "activated" as soon as the user imports that library. The developers at Vulture are working hard (gives a pat on his back) to ship even more of these. Guess what, you can add one for your library, or just open an issue and we would create one for you. PR's are more than welcome! :-)
 
-**Some other ways of whitelisting:**
+**Some other ways of dealing with false poisitives:**
 - Mark unused variables by starting them with an "`_`".  (e.g., `_x, y = get_pos()`)
 - Use different files for API endpoints, ORM, etc. and exclude them with the help of `--exclude` flag.
 
