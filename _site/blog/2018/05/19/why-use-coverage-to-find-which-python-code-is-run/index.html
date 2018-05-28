@@ -29,7 +29,7 @@ program.py:12: unused variable 'message' (60% confidence)
 <span class="n">awesome_whitelist</span> <span class="o">=</span> <span class="n">Whitelist</span><span class="p">()</span>
 
 <span class="n">Whitelist</span><span class="o">.</span><span class="n">false_positive_function</span>
-</code></pre></div> <p>Now, I am gonna run Vulture using the following command:</p> <div class="highlighter-rouge"><pre class="highlight"><code>(venv) $ vulture program.py whitelist_program.py
+</code></pre></div> <p>Now, let’s run Vulture using the following command:</p> <div class="highlighter-rouge"><pre class="highlight"><code>(venv) $ vulture program.py whitelist_program.py
 </code></pre></div> <p>And hurray, output does not contain the false positive function.</p> <div class="highlighter-rouge"><pre class="highlight"><code>program.py:2: unused import 'os' (90% confidence)
 program.py:12: unused variable 'message' (60% confidence)
 </code></pre></div> <p><strong>How did that work?</strong></p> <p>Since you also passed the whitelist file along with the file to be analysed, vulture created <code class="highlighter-rouge">ast</code>’s for both of them and while parsing those trees, Vulture created a common <code class="highlighter-rouge">set</code> for storing the names of used and defined objects. Since the name of the false positive function occurs in both of them, it is therefore not treated as unused.</p> <p>A thing you may find interesting and noteworthy about the <code class="highlighter-rouge">Whitelist</code> class is that it does absolutely “nothing”. It’s current implementation is as follows:</p> <div class="language-py highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Whitelist</span><span class="p">:</span>

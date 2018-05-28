@@ -92,7 +92,7 @@ awesome_whitelist = Whitelist()
 Whitelist.false_positive_function
 ```
 
-Now, I am gonna run Vulture using the following command:
+Now, let's run Vulture using the following command:
 ```
 (venv) $ vulture program.py whitelist_program.py
 ```
