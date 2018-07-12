@@ -45,12 +45,12 @@ Anyways, I had a hard time testing every piece and dumping the ones which couldn
 > PS: It later turned out that I didn't actually had any bulbs, the ones' I had bought were already martyred in my brother's quest to
 see what would happen to the filament if we crack the glass open, genius it was!
 
-Later, when I found Vulture, I realised the worth the tool which could fumigate for me.
+Later, when I found Vulture, I realised the worth of a tool which could do such fumigation for me.
 
 ## Introduction
 
-By now, it must've been pretty clear what what exactly does Vulture do - it cleans up stuff, chops dead code. But, this statement begs
-the answer that what exactly is dead code?
+By now, it must've been pretty clear  what exactly does Vulture do - it cleans up stuff, chops dead code. But, this statement begs
+the question that what exactly is dead code?
 
 #### What is dead code?
 
@@ -58,25 +58,25 @@ In simple terms, dead code is that code which is never ever run by your program.
 
 * A variable/function/class which is defined, but is never utilised by your program.
 * Code after return statement in a function/method.
-* Code inside an `if False:` statement. (:facepalm:) - (Remember that time you were debugging a really long if else ladder and you wanted only one branch to be executed, so you made all others `False` - Yeah, Vulture ensures that you don't commit that code)
+* Code inside an `if False:` statement. (:facepalm:)
 
 #### Why on holy Earth would I write dead code in my own software?
 
 > For the same reason you introduce bugs in it ;-)
 
-Dead code isn't intentionally introduced into the source code, instead it just crawls in through tiny seipps of carelessness and lack
+Dead code isn't intentionally introduced into the source code, instead it just crawls in through tiny sieves of carelessness and lack
 of attention, which is completely humane. Some of the most common causes of dead code are:
 
 * **Refactoring** - Many a times, programmers delete some legacy code which used to call a function (or use an import) and rewrite it in a different manner. Thus, eliminating the need of those old functions/imports. Now, these unused functions/imports are dead.
 * **Misspellings** - Was it `increase_temperature` or `temperatur_increase`??? Hmmm, let's go with `increase_temperature` - If both of these
   names are already defined in your codebase, and you used the wrong one, not only have you introduced dead code, but also a bug into
   your program. Luckily, Vulture would help you catch those bugs.
-* **During debugging** - As humans, we tend to be lazy and that is why instead of using debugger checkpoints, we tend to use debug strings and
-  oddly placed `return` & `break` statements. If not paid attention, these changes can be committed and would again introduce bugs
+* **During debugging** - As humans, we tend to be lazy and that is why instead of using debugger checkpoints, we tend to use debug strings like `"Reached here"` and `"Here2"` and
+  obscurely placed `return` & `break` statements. If not paid attention, these changes can be committed and would again introduce bugs
   alongside dead code.
 
-By now, it must be evident that having dead code is **bad** - it can cause bugs, confusion for newcomers and it shrinks your program size
-and that you should remove it. It also helps improve maintainability and code quality of your program.
+By now, it must be evident that having dead code is **evil** - it causes bugs, confusion for newcomers and unnecessarily increases your program size
+and that you should absolutely remove it. It also helps improve maintainability and code quality of your program.
 
 In the next post, I would continue with how to install Vulture and how to use it.
 
