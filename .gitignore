@@ -1,9 +1,9 @@
+_site/**/*
 .bundle
 db/*.sqlite3
 log/*.log
 tmp/
 .sass-cache/
 .DS_Store
-_site/
 *.swp
 *.swo
