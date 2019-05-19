@@ -8,11 +8,12 @@ blog: true
 category: blog
 ---
 
-India - the golden bird of medieval times, known for it's rich stones and silk
-and sharing a cut of more than 27% of the world's economy during the fifteenth
+India - the golden bird of medieval times, known for it's riches - the diamonds
+and the muslins, one of the world's greatest exporter of silk - a country
+sharing a cut of more than 27% in the world's economy during the sixteenth
 century - the country which was then capitalized for 200 years all the while
 feeding to the interests of Britain, leaving the post-British India with a
-crumbling share of a little more than 3% in the world economy.
+crumbling share of a little more than 3% in the world GDP.
 
 This is my country.
 
@@ -26,9 +27,9 @@ amorality of the British rule or the atrocities imposed on our forefathers
 without scruple or principle. This case of insincerity has lead to an incomplete
 analysis of the deep wounds of the colonization and of finding a cure.
 
-On the contrary, the notions about how the British
-brought industrialization to India, facilitated the development of train and
-played a key role in the 'unification' of India are quite popular.
+On the contrary, the notions about how the British brought industrialization to
+India, how trains were supposedly a precious 'gift', and how British were key to
+the political 'unification' of India are quite popular.
 
 But recently coming across an Oxford Union Debate by Dr. Shashi Tharoor, a
 novelist, diplomat and Indian politician, on the proposition “Britain Owes
